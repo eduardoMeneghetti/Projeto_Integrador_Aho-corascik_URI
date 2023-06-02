@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/Pesqiusa.css">
+    <title>Pesquisa da empresa</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa de Empresas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/paginas/index.html">Home</a></li>
+            <li><a href="/paginas/pesquisa.html">Pesquisa</a></li>
+            <li><a href="/paginas/Agradecimentos.html">Agradecimentos</a></li>
+            <li><a href="/paginas/Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Busca de Empresas</h2>
+        <div class="form-container">
+          <input type="text" id="searchInput" placeholder="Digite o nome da empresa">
+          <button onclick="searchCompanies()">Buscar</button>
+        </div>
+        <p style="padding-left: 25px;"><b>Resultados:</b></p>
+        <ul id="resultsList"></ul>
+      </div>
+      <script src="/JS/server.js"></script>
+
+</body>
+</html>

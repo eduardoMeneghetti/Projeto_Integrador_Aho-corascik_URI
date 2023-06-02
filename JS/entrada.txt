@@ -1,0 +1,11 @@
+Master; Supermercados de grande porte que vende carne; 
+Supermercados;Master; 
+Master Sonda Shoppin; Segundo Mercado;
+Cassul; Distribuidora; Loja;
+Astrus; Design;
+Ereline;  Provedor;
+Olfar; Energia Sustentavel;
+Peccin; Doces; 
+Renner; Roupas; 
+AgorSul; Agorpecuaria;
+

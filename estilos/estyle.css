@@ -1,10 +1,14 @@
 body{
-    font-family: "Oswald";
+    font-family: 'Montserrat', sans-serif;
     background-color: #ffffe7;
 }
 
 #res{
     font-size: 20px;
+}
+
+.titulos{
+    text-align: center;
 }
 
 .botaoBusca{
