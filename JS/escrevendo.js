@@ -11,9 +11,10 @@ function enviarDadosParaServidor(texto, descricao) {
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        console.log('Escrita realizada com sucesso no servidor.');
+        const saida = document.getElementById('res')
+        saida.innerHTML = "<br><br><h3 style='color:green; text-align:center;'><b>Cadastro realizado com sucesso!</b></h3>"
       } else {
-        console.error('Erro ao salvar o arquivo no servidor.');
+        saida.innerHTML = "<br><br><h3 style='color:red; text-align:center;' >Falha na realização do cadastro</h3>"
       }
     }
   };
