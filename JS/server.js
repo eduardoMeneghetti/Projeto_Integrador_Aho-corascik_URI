@@ -4,8 +4,8 @@ let companiesData = [];
 // Função para carregar os dados das empresas a partir do arquivo
 function loadCompaniesData() {
   // Caminho do arquivo de empresas
-  const filePath = '/JS/entrada.txt';
-
+  const filePath = '../JS/entrada.txt';
+  
   // Fazendo uma solicitação HTTP GET para carregar o arquivo de dados
   fetch(filePath)
     .then((response) => response.text()) // Lendo o conteúdo do arquivo como texto
@@ -50,6 +50,72 @@ function searchCompanies() {
   const resultsList = document.getElementById('resultsList');
   resultsList.innerHTML = '';
 
+  // Implementação do algoritmo Aho-Corasick
+  class AhoCorasickNode {
+    constructor(value) {
+      this.value = value;
+      this.children = new Map();
+      this.fail = null;
+      this.output = [];
+    }
+  }
+
+  class AhoCorasick {
+    constructor() {
+      this.root = new AhoCorasickNode(null);
+    }
+
+    addPattern(pattern) {
+      let node = this.root;
+      for (const char of pattern) {
+        if (!node.children.has(char)) {
+          node.children.set(char, new AhoCorasickNode(char));
+        }
+        node = node.children.get(char);
+      }
+      node.output.push(pattern);
+    }
+
+    buildFailureLinks() {
+      const queue = [];
+      for (const child of this.root.children.values()) {
+        queue.push(child);
+        child.fail = this.root;
+      }
+
+      while (queue.length > 0) {
+        const node = queue.shift();
+        for (const [char, child] of node.children) {
+          queue.push(child);
+          let failNode = node.fail;
+          while (failNode !== null && !failNode.children.has(char)) {
+            failNode = failNode.fail;
+          }
+          child.fail = failNode !== null ? failNode.children.get(char) : this.root;
+          child.output = child.output.concat(child.fail.output);
+        }
+      }
+    }
+
+    search(text) {
+      const results = [];
+      let node = this.root;
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        while (node !== null && !node.children.has(char)) {
+          node = node.fail;
+        }
+        if (node === null) {
+          node = this.root;
+          continue;
+        }
+        node = node.children.get(char);
+        results.push(...node.output);
+      }
+      return results;
+    }
+  }
+
   // Criando o objeto Aho-Corasick
   const ac = new AhoCorasick();
 
@@ -66,87 +132,27 @@ function searchCompanies() {
 
   // Filtrando as empresas correspondentes aos resultados
   const filteredCompanies = companiesData.filter((company) => {
-    return results.includes(company.name.toLowerCase());
+    const nameMatch = company.name.toLowerCase().includes(searchTerm);
+    const description = company.description ? company.description.toLowerCase() : '';
+    const descriptionMatch = description.includes(searchTerm);
+    return nameMatch || descriptionMatch;
   });
 
   // Exibindo os resultados na lista
   filteredCompanies.forEach((result) => {
     const listItem = document.createElement('li');
+    const highlightedName = result.name.replace(new RegExp(searchTerm, 'gi'), '<mark>$&</mark>');
+    const highlightedDescription = result.description.replace(new RegExp(searchTerm, 'gi'), '<mark>$&</mark>');
     listItem.innerHTML = `
-      <h3>${result.name}</h3>
-      <p>${result.description}</p>
+      <h3>${highlightedName}</h3>
+      <p>${highlightedDescription}</p>
       <hr>
     `;
-
+  
     resultsList.appendChild(listItem);
   });
 }
 
+
 // Carregando os dados das empresas ao iniciar a página
 loadCompaniesData();
-
-// Implementação do algoritmo Aho-Corasick
-class AhoCorasickNode {
-  constructor(value) {
-    this.value = value;
-    this.children = new Map();
-    this.fail = null;
-    this.output = [];
-  }
-}
-
-class AhoCorasick {
-  constructor() {
-    this.root = new AhoCorasickNode(null);
-  }
-
-  addPattern(pattern) {
-    let node = this.root;
-    for (const char of pattern) {
-      if (!node.children.has(char)) {
-        node.children.set(char, new AhoCorasickNode(char));
-      }
-      node = node.children.get(char);
-    }
-    node.output.push(pattern);
-  }
-
-  buildFailureLinks() {
-    const queue = [];
-    for (const child of this.root.children.values()) {
-      queue.push(child);
-      child.fail = this.root;
-    }
-
-    while (queue.length > 0) {
-      const node = queue.shift();
-      for (const [char, child] of node.children) {
-        queue.push(child);
-        let failNode = node.fail;
-        while (failNode !== null && !failNode.children.has(char)) {
-          failNode = failNode.fail;
-        }
-        child.fail = failNode !== null ? failNode.children.get(char) : this.root;
-        child.output = child.output.concat(child.fail.output);
-      }
-    }
-  }
-
-  search(text) {
-    const results = [];
-    let node = this.root;
-    for (let i = 0; i < text.length; i++) {
-      const char = text[i];
-      while (node !== null && !node.children.has(char)) {
-        node = node.fail;
-      }
-      if (node === null) {
-        node = this.root;
-        continue;
-      }
-      node = node.children.get(char);
-      results.push(...node.output);
-    }
-    return results;
-  }
-}

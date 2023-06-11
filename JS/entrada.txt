@@ -1,11 +1,21 @@
-Master; Supermercados de grande porte que vende carne; 
-Supermercados;Master; 
-Master Sonda Shoppin; Segundo Mercado;
-Cassul; Distribuidora; Loja;
-Astrus; Design;
-Ereline;  Provedor;
-Olfar; Energia Sustentavel;
-Peccin; Doces; 
-Renner; Roupas; 
-AgorSul; Agorpecuaria;
-
+Olfar S/A Alimento e Energia; Oferecer produtos em alimentação e energia, atendendo às necessidades do mercado com excelência, inovação e credibilidade, gerando lucro e renda, promovendo o desenvolvimento contínuo de seus colaboradores, com respeito à sociedade e ao meio ambiente.                               
+Peccin S/A; Hoje a Peccin se firmou como uma grande indústria, com um parque industrial de 23.000m² e uma das maiores capacidades de produção do país no segmento de doces. É detentora de marcas como Trento, Tribala, Blong e Frutomila.                                                                 
+Comil Carrocerias e Ônibus; Presente nas ruas e estradas de mais de 30 países, a COMIL Ônibus S.A. é uma das principais montadoras de ônibus do Brasil. Possui uma completa linha de veículos que inclui ônibus rodoviários, urbanos, micros e especiais, produzidos através de criteriosos estudos de mercado.                                
+Cavaletti S/A Cadeiras Profissionais; Desde 1974, a Cavaletti S/A Cadeiras Profissionais emprega padrões de qualidade diferenciados no desenvolvimento e produção de assentos para ambientes profissionais e colaborativos. Os produtos Cavaletti são atualmente reconhecidos entre os mais confiáveis do mercado nacional e internacional, resultado do investimento constante em capacidade produtiva, pesquisa e design.             
+Cooperativa Central Aurora Alimentos; A Aurora conquistou o mercado brasileiro e mundial levando, do campo à mesa dos consumidores, alimentos de excelência. Com uma trajetória de mais de cinco décadas, se tornou referência mundial na tecnologia e processamento de carnes. Por meio de uma gestão participativa, equilibra objetivos econômicos com o compromisso social e com os cuidados ao meio ambiente.                          
+Master ATS Supermercados Ltda; Uma loja moderna com serviços especiais de supermercado com padaria completa, açougue com cortes de carnes especiais, fiambreria, amplo bazar e floricultura.                       
+Plaxmetal Cadeiras Corporativas; Fundada em 1986, a Plaxmetal atua no mercado de mobiliário corporativo e escolar com uma ampla linha de cadeiras corporativas e móveis escolares, com preço acessível e alta durabilidade.                         
+Triel HT Participações Ltda; O Grupo TRIEL-HT fundado em 1984 e fruto de uma bem sucedida história de empreendedorismo, está focado em sua missão de oferecer as mais modernas soluções tecnológicas em implementos rodoviários, logística agroindustrial e viaturas especiais.                                  
+Cercena S/A Ind. e Participações; Fundada em maio de 1965 a Cercena S/A traz um legado de trabalho, persistência, criatividade e inovação atuando nos mercados nacionais e internacionais. Certificada ISO 9001 desde 1999.                         
+Ke Soja Com. de Insumos Agrícolas; KESOJA é, hoje, uma empresa sólida que dispõe de uma vasta linha de insumos, máquinas, tratores, plantadeiras, implementos, agricultura de precisão peças e serviços da região do Alto Uruguai e Campos de Cima da Serra, além do bom atendimento devido aos anos de experiência no mercado.                    
+Inaceres Agrícola Ltda; A INACERES, pertencente ao Grupo Agroceres, é uma empresa de alimentos especializada em palmitos cultivados de pupunha. Fundada em 2001, a INACERES vem conquistando desde então o topo do ranking na cadeia do palmito cultivado no país, e hoje é a líder em pesquisa, produção, processamento e comercialização de palmitos cultivados em todo o Brasil.                                           
+JR Meneguzzo; A empresa J R Meneguzzo Industria Do Vestuario Ltda está cadastrada na Receita Federal sob o CNAE 1412-6/01 com atividade fim de Confecção De Peças De Vestuário, Exceto Roupas Íntimas E As Confeccionadas Sob Medida.                                                       
+Zin Pão Indústria de Alimentos; Uma empresa integrada as tecnologias e processos de fabricação, embalagem e armazenamento das multinacionais.                               
+C. Vaccaro e Cia Ltda; A indústria é moderna, com alto nível de tecnologia e automação que atua na industrialização da soja, com produção de ingredientes para alimentação animal atendendo desde pequeno produtor a grandes fábricas de ração, tendo como resultado, produtos diferenciados de alta qualidade como farelo de soja semi integral extrusado, plus Energy, ideal para aves, suínos e bovinos, e o óleo de soja degomado, voltado à industrias de biocombustíveis, rações, alimentícias, farmacêuticas, químicas entre outras.                                          
+Ind. de Balas Munarfrey Ltda; Atualmente, sua produção está baseada no segmento de balas e pirulitos. A área de atuação da Berbau se dá no mercado nacional e internacional.                                
+Cassul Distribuidora; Entender as necessidades de nossos clientes e a satisfação de nossos colaboradores, oferecendo a excelência no atendimento e buscando resultados rentáveis para a empresa, sempre a serviço do desenvolvimento e bem-estar individual e coletivo.                                                
+Octaviano Zandonai e Cia Ltda (Caitá); Empresa voltada para o comércio e varejo de produtos diversos.                
+Menno Equipamentos para Escritório; No Brasil, somos uma das maiores empresas nos segmentos de automação, manufatura e também de fornecimento de equipamentos e suprimentos para escritório, com participação expressiva no exterior, em países como Paraguai, Uruguai, Chile, Peru e China.                  
+Brastelha; Atualmente, conta com mais de 200 colaboradores em sete unidades fabris e todas as unidades são voltadas para a produção de soluções em coberturas metálicas, fechamentos laterais para segmentos industriais, comerciais, residenciais, agronegócio e outros, transformando mais de 2.500 ton/mês de aço plano revestido em telhas e painéis termoisolantes.
+Caitá Supermercados; Supermercados mais legais de Erechim e região.
+Empresa;Fé 

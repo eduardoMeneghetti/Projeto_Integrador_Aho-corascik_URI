@@ -1,0 +1,10 @@
+fetch = método utilizado para buscar recursos de fora do código disponivél em qualquer lugar de um servidor,
+seu retorno é uma promisse com os dados da solictação;
+
+.then e .catch = métodos utilzados para lidar com o response vindo do fetch, sendo o fetch um método para lidar com
+a informação e o .catch para lidar com os erros ao fazer as solicitações;
+
+.split = uitilizamos para conseguir manipular dados e speralos em arrays, podemos colocar um meio para separa os dados
+vindos de um arquivo, com uso de espaços, virgulas, etca
+
+.map = utilizado para lidar com arrays, onde Mapea-se o array e conseguimos manipular valor a valor;
